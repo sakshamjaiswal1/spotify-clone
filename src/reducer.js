@@ -3,8 +3,9 @@ user:null,
 playlists:[],
 playing:false,
 item:null,
+dialy_mix:null,
 // Remove after finish developing
-token:'BQD-dMyQ4XX-r2B0oKEzv1dbUkREUidEIJpQrcJyRiBrPq9QOTanGea3RZUMfY2J6OuVn6pjU24omzg4bnyGKnG2OBpc1O2G9O1hEV89zNQM1H9ruTpZP_n0spyp-mJSccQH6alohNBDRL8asppdv8UAW8MbMeu2vjNtFvagl4BAm0W7Mzg3'
+token:null
 }
 
 const reducer =(state,action)=>{
@@ -27,7 +28,12 @@ switch(action.type){
          return {
              ...state,
              playlists:action.playlists
-         }     
+         } 
+      case "SET_DAILY_MIX":
+          return{
+              ...state,
+              daily_mix:action.daily_mix
+          }       
         default :
         return state
 }

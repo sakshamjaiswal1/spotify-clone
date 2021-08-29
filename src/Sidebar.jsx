@@ -25,9 +25,11 @@ function Sidebar() {
       <br />
       <strong className='sidebar__title'>PLAYLIST</strong>
       <hr />
+      <div className='sideScroll' >
     {playlists?.items?.map(playlist=>(
       <SidebarOption title={playlist.name} />
     )) }
+    </div>
     </div>
   );
 }

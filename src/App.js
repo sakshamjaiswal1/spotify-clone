@@ -41,6 +41,14 @@ dispatch({
     console.log(playlists)
   })
 }
+spotify.getPlaylist('37i9dQZF1E37ls8Yx3iCDi').then(response=>{
+  dispatch({
+    type:"SET_DAILY_MIX",
+    daily_mix:response,
+
+  })
+})
+
 
 },[])
 
