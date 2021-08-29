@@ -2,13 +2,13 @@ import React from "react";
 import "./Header.css";
 import { Avatar } from "@material-ui/core";
 import SearchIcon from "@material-ui/icons/Search";
-import { useEffect } from "react";
+// import { useEffect } from "react";
 import { useDataLayerValue } from './DataLayer';
-import logo from "./TwitterLogo.png"
+// import logo from "./TwitterLogo.png"
 
 
 function Header() {
-const [{user},dispatch]=useDataLayerValue()
+const [{user}]=useDataLayerValue()
 
   return <div className="header">
       <div className="header__left">

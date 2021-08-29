@@ -1,4 +1,4 @@
-import { useEffect ,useState } from 'react';
+import { useEffect  } from 'react';
 import './App.css';
 import Login from './Login';
 import { getTokenFromUrl } from './spotify';
@@ -10,7 +10,7 @@ const spotify=new SpotifyWebApi()
 
 function App() {
 
-const [{user,token},dispatch]=useDataLayerValue()
+const [{token},dispatch]=useDataLayerValue()
 
 // Runs code on a given condition
   useEffect(()=>{
@@ -50,7 +50,7 @@ spotify.getPlaylist('37i9dQZF1E37ls8Yx3iCDi').then(response=>{
 })
 
 
-},[])
+},[dispatch])
 
 
   return (
