@@ -18,7 +18,7 @@ const hash=getTokenFromUrl()
 
 window.location.hash=''
 const _token=hash.access_token
-console.log('i have a token',_token)
+// console.log('i have a token',_token)
 if(_token){
 dispatch({
   type:'SET_TOKEN',
@@ -38,7 +38,7 @@ dispatch({
       playlists:playlists
       
     })
-    console.log(playlists)
+    // console.log(playlists)
   })
 }
 spotify.getPlaylist('37i9dQZF1E37ls8Yx3iCDi').then(response=>{

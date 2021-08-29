@@ -9,7 +9,7 @@ token:null
 }
 
 const reducer =(state,action)=>{
-console.log(action)
+// console.log(action)
 
 // Action-> type and payload 
 
